@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/frined_request_user_image"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/default_image"
+
+        android:layout_alignTop="@+id/frined_request_display_username"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/frined_request_display_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+android:layout_marginTop="4dp"
+
+        android:text="Username"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/frined_request_user_image" />
+
+    <Button
+        android:id="@+id/friend_request_decider_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="sens-serif-medium"
+
+        android:padding="5dp"
+        android:background="@drawable/button"
+        android:text="Open Profile To Respond"
+        android:textColor="#fff"
+        android:layout_below="@+id/frined_request_user_image"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:textColor="#000"
+        android:layout_marginTop="5dp"
+        android:textStyle="italic"
+        android:id="@+id/friend_request_status"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_below="@+id/frined_request_display_username"
+        android:layout_alignStart="@+id/frined_request_display_username" />
+
+</RelativeLayout>

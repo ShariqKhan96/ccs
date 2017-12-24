@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ChatnSnap</string>
+    <string name="log_out">Log Out</string>
+    <string name="display_name">Display Name</string>
+    <string name="e_mail">E-Mail</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Welcome to request page </string>
+    <string name="friends_since">Friends Since</string>
+</resources>

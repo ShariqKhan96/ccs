@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/rel"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.shariqkhan.chatnsnap.SettingsAccount">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cir_img"
+
+        android:layout_width="250dp"
+        android:layout_height="220dp"
+
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:src="@drawable/default_image" />
+
+    <TextView
+        android:id="@+id/Display_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Display Name"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/Status"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+
+        android:text="Hey there i am using SnapnChat"
+        android:layout_below="@+id/Display_name"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_image"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Status"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="48dp"
+        android:background="#ffffff"
+        android:text="CHANGE IMAGE" />
+
+    <Button
+        android:id="@+id/btn_status"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="CHANGE STATUS"
+        android:textColor="#ffffff"
+        android:background="@color/colorAccent"
+        android:layout_below="@+id/btn_image"
+        android:layout_alignStart="@+id/btn_image" />
+
+</RelativeLayout>

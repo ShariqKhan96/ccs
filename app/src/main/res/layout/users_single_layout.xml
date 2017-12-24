@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/friend_list_small_image"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/default_image" />
+
+    <TextView
+        android:id="@+id/friend_list_single_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/friend_list_small_image"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@+id/friend_list_small_image"
+        android:text="Display Name"
+        android:textColor="#000000"
+        android:textSize="20sp"
+         />
+
+    <TextView
+        android:id="@+id/friend_list_single_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/friend_list_single_name"
+        android:layout_below="@+id/friend_list_single_name"
+        android:layout_marginTop="7dp"
+        android:text="Defalut status"
+        android:textColor="#000000"
+        android:textSize="15sp"
+         />
+
+</RelativeLayout>

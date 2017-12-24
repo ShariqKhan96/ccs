@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.shariqkhan.chatnsnap.UserProfile">
+
+    <ImageView
+        android:id="@+id/user_profile_picture"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_image"
+        />
+
+    <TextView
+        android:id="@+id/user_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="User Profile"
+        android:textColor="#fff"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/user_profile_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_profile_name"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="30dp"
+        android:text="TextView"
+        android:textColor="#fff"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/user_prfiles_friends"
+        android:layout_marginLeft="-5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_profile_status"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:text="Friends"
+        android:textColor="#fff"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/friend_request_button"
+        android:layout_width="150dp"
+        android:textColor="#fff"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_prfiles_friends"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="-35dp"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:background="@color/colorAccent"
+        android:text="Friend Request" />
+
+    <Button
+        android:padding="5dp"
+        android:textColor="#fff"
+        android:id="@+id/cancel_request_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="-35dp"
+        android:background="@color/colorAccent"
+        android:text="Cancel Request"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/friend_request_button" />
+</RelativeLayout>
